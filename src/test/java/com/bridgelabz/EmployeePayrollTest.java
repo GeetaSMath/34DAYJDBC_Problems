@@ -14,11 +14,10 @@ public class EmployeePayrollTest {
         List<Employee> employeePayrollDataList = employeePayRollService.queryExecute(sql);
         Assert.assertEquals(8, employeePayrollDataList.size());
     }
-
     @Test
     public void givenUpdatingTerisaBasicPay_whenUpdate_ShouldReturnUpdatedPay() {
         double BasicPay = 3000000;
-        String Name = "geeta";
+        String Name = "Terisa";
         double salaryUpdated = employeePayRollService.updateBasicPay(Name, BasicPay);
         Assert.assertEquals(BasicPay, salaryUpdated,0.0);
     }
@@ -30,5 +29,4 @@ public class EmployeePayrollTest {
         double salaryUpdated = employeePayRollService.updateBasicPay(Name, BasicPay);
         Assert.assertEquals(BasicPay, salaryUpdated,0.0);
     }
-
 }
