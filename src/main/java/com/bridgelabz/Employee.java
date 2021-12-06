@@ -1,32 +1,33 @@
 package com.bridgelabz;
 
 public class Employee {
-    int EmpId;
-    String EmpName, PhoneNumber, Address, Department, EmpStart, Gender;
+
+    int ID, PhoneNumber;
+    String Name, Address, Department, Start, Gender;
     double BasicPay, Deductions, TaxablePay, IncomeTax, NetPay;
 
-    public int getEmpId() {
-        return EmpId;
+    public int getID() {
+        return ID;
     }
 
-    public void setEmpId(int empId) {
-        EmpId = empId;
+    public void setID(int iD) {
+        ID = iD;
     }
 
-    public String getEmpName() {
-        return EmpName;
-    }
-
-    public void setEmpName(String empName) {
-        EmpName = empName;
-    }
-
-    public String getPhoneNumber() {
+    public int getPhoneNumber() {
         return PhoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
+    public void setPhoneNumber(int phoneNumber) {
         PhoneNumber = phoneNumber;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
     }
 
     public String getAddress() {
@@ -45,12 +46,12 @@ public class Employee {
         Department = department;
     }
 
-    public String getEmpStart() {
-        return EmpStart;
+    public String getStart() {
+        return Start;
     }
 
-    public void setEmpStart(String empStart) {
-        EmpStart = empStart;
+    public void setStart(String Start) {
+        Start = Start;
     }
 
     public String getGender() {
@@ -103,19 +104,9 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "EmpId=" + EmpId +
-                ", EmpName='" + EmpName + '\'' +
-                ", PhoneNumber='" + PhoneNumber + '\'' +
-                ", Address='" + Address + '\'' +
-                ", Department='" + Department + '\'' +
-                ", EmpStart='" + EmpStart + '\'' +
-                ", Gender='" + Gender + '\'' +
-                ", BasicPay=" + BasicPay +
-                ", Deductions=" + Deductions +
-                ", TaxablePay=" + TaxablePay +
-                ", IncomeTax=" + IncomeTax +
-                ", NetPay=" + NetPay +
-                '}';
+        return "Employee [ID=" + ID + ", PhoneNumber=" + PhoneNumber + ", Name=" + Name + ", Address=" + Address
+                + ", Department=" + Department + ", Start=" + Start + ", Gender=" + Gender + ", BasicPay=" + BasicPay
+                + ", Deductions=" + Deductions + ", TaxablePay=" + TaxablePay + ", IncomeTax=" + IncomeTax + ", NetPay="
+                + NetPay + "]";
     }
 }
